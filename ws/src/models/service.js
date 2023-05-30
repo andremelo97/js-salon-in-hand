@@ -4,7 +4,8 @@ const Schema = mongoose.Schema;
 const service = new Schema({
     salaoId: {
         type: mongoose.Types.ObjectId,
-        ref: 'Salon'
+        ref: 'Salon',
+        required: true
     },
     title: {
         type: String,
